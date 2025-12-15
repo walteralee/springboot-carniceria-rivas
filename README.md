@@ -33,16 +33,22 @@ persistencia de datos, arquitectura clara y configuración portable.
 
 ## ⚙️ Ejecución del proyecto
 
-```bash
 1. Clonar el repositorio:
 
+```bash
 git clone https://github.com/walteralee/springboot-carniceria-rivas.git
 
 2. Acceder al directorio del proyecto:
-   cd springboot-carniceria-rivas
+
+```bash
+cd springboot-carniceria-rivas
 
 3. Ejecutar la aplicación:
-   mvn spring-boot:run
+
+```bash
+mvn spring-boot:run
 
 4. Acceder desde el navegador:
+
+```bash
    http://localhost:8080
