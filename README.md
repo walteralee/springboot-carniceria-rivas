@@ -28,23 +28,6 @@ persistencia de datos, arquitectura clara y configuración portable.
 - SQLite (base de datos embebida)
 - Maven
 - HTML, CSS y JavaScript
-
----
-
-## 📂 Estructura del proyecto
-
-src/
-├── main/
-│ ├── java/
-│ │ └── com.informaticonfig.spring.app1.springboot_applications
-│ │ ├── controllers
-│ │ ├── model
-│ │ └── repository
-│ └── resources/
-│ ├── static/
-│ └── application.properties
-└── test/
-
 ---
 
 ## ⚙️ Ejecución del proyecto
