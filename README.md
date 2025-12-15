@@ -33,8 +33,9 @@ persistencia de datos, arquitectura clara y configuración portable.
 
 ## ⚙️ Ejecución del proyecto
 
-1. Clonar el repositorio:
 ```bash
+1. Clonar el repositorio:
+
 git clone https://github.com/walteralee/springboot-carniceria-rivas.git
 
 2. Acceder al directorio del proyecto:
