@@ -31,24 +31,30 @@ persistencia de datos, arquitectura clara y configuración portable.
 
 ---
 
-## ⚙️ Ejecución del proyecto
+⚙️ Ejecución del proyecto
 
-1. Clonar el repositorio:
+Clona el repositorio desde GitHub:
 
-```bash
 git clone https://github.com/walteralee/springboot-carniceria-rivas.git
 
-2. Acceder al directorio del proyecto:
+Accede al directorio del proyecto:
 
-```bash
 cd springboot-carniceria-rivas
 
-3. Ejecutar la aplicación:
+Ejecuta la aplicación.
 
-```bash
+Si tienes Maven instalado, puedes usar:
+
 mvn spring-boot:run
 
-4. Acceder desde el navegador:
+Si no tienes Maven instalado (opción recomendada), usa Maven Wrapper:
 
-```bash
-   http://localhost:8080
+./mvnw spring-boot:run
+
+En Windows, el comando equivalente es:
+
+.\mvnw spring-boot:run
+
+Una vez iniciada la aplicación, accede desde el navegador a:
+
+http://localhost:8080
