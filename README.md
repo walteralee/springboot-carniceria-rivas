@@ -4,7 +4,7 @@ Aplicación web desarrollada con **Spring Boot** que permite registrar y gestion
 los productos (carnes) de una carnicería, almacenando la información de forma
 persistente en una base de datos local.
 
-El objetivo del proyecto es mostrar una aplicación backend funcional con
+El objetivo del proyecto es mostrar una aplicación backend funcional, con
 persistencia de datos, arquitectura clara y configuración portable.
 
 ---
@@ -21,22 +21,24 @@ persistencia de datos, arquitectura clara y configuración portable.
 
 ## 🛠️ Tecnologías utilizadas
 
-- Java 21
-- Spring Boot
-- Spring Data JPA
-- Hibernate
-- SQLite (base de datos embebida)
-- Maven
-- HTML, CSS y JavaScript
+- Java 21  
+- Spring Boot  
+- Spring Data JPA  
+- Hibernate  
+- SQLite (base de datos embebida)  
+- Maven  
+- HTML, CSS y JavaScript  
+
 ---
 
 ## ⚙️ Ejecución del proyecto
 
 1. Clonar el repositorio:
-   git clone https://github.com/TU_USUARIO/NOMBRE_DEL_REPOSITORIO.git
+```bash
+git clone https://github.com/walteralee/springboot-carniceria-rivas.git
 
 2. Acceder al directorio del proyecto:
-   cd NOMBRE_DEL_REPOSITORIO
+   cd springboot-carniceria-rivas
 
 3. Ejecutar la aplicación:
    mvn spring-boot:run
