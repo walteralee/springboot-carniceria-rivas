@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo">Beef</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="images/menu.png" class="menu-icono" alt="logo menu"></label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Reservaciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" class="img-carrito" alt="carrito-imagen">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Cantidad</th>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <div class="parte-inferior-carrito">
+                                <div class="botones">
+                                    <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                                    <a href="#" id="comprar-ahora" class="btn-4">Comprar ahora</a>
+                                </div>
+                                <h3>Total: 40000000€</h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--       
+        <div class="header-content container">
+        
+            <div class="socials">
+                <a href="#"><img src="images/s1.svg" alt="logo instagram"></a>
+                <a href="#"><img src="images/s2.svg" alt="logo facebook"></a>
+                <a href="#"><img src="images/s3.svg" alt="logo twitter"></a>
+            </div>
+
+            <div class="header-txt">
+                <h1>Carniceria Rivas</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                
+                <div class="botones-menu">
+                    <a href="#" class="btn-menu">Mas Informacion</a>
+                    <a href="#" class="btn-menu">Menu</a>
+                </div>
+                
+            </div>
+
+            <div class="img-arrow">
+                <img src="images/arrow.svg" alt="imagen flecha">
+            </div>
+
+        </div>
+        -->
+
+        <div class="header-content container">
+
+            <h1>Carniceria Rivas</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minus aspernatur
+                omnis officiis. Harum saepe ratione obcaecati culpa debitis reprehenderit quia
+                consequuntur? Illo, quaerat corrupti? Nemo corrupti aspernatur distinctio in!
+            </p>
+
+            <div class="botons">
+                <a href="#" class="btn-1">Mas Informacion</a>
+                <a href="#" class="btn-1">Menu</a>
+            </div>
+
+            <div class="socials-1">
+                <a href="#"><img src="images/s1.svg" alt="logo instagram"></a>
+                <a href="#"><img src="images/s2.svg" alt="logo facebook"></a>
+                <a href="#"><img src="images/s3.svg" alt="logo twitter"></a>
+            </div>
+
+            <a href="lista">
+                <img class="arrow" src="images/arrow.svg" alt="flecha">
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- Seccion #1 -->
+
+    <section class="recetas container">
+
+        <div class="recetas-1">
+            <h3>135 modos de preparar carne</h3>
+            <hr>
+            <p>Recetas</p>
+        </div>
+
+        <div class="recetas-2">
+            <h2>135 <br> recetas <br> de carne </h2>
+        </div>
+
+    </section>
+
+    <!-- Seccion #2 -->
+
+    <section class="platillos container" id="lista">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Entrecot a la Parrilla</h3>
+                        <p class="precio">$250</p>
+                        <img src="images/pl1.png" alt="">
+                        <p>
+                            Delicioso entrecot de ternera, asado a la perfección, con jugos naturales y un toque de sal
+                            gruesa. Ideal para los amantes de la carne.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Solomillo a la Plancha</h3>
+                        <p class="precio">$270</p>
+                        <img src="images/pl2.png" alt="">
+                        <p>
+                            Tierna pieza de solomillo de ternera, dorada a la plancha y servida con un toque de
+                            mantequilla de hierbas. Sabor intenso y jugoso.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Costillas BBQ de Ternera</h3>
+                        <p class="precio">$230</p>
+                        <img src="images/pl3.png" alt="">
+                        <p>
+                            Costillas de ternera ahumadas y glaseadas con nuestra salsa BBQ casera, tiernas y llenas de
+                            sabor en cada bocado.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Chuletón a la Brasa</h3>
+                        <p class="precio">$300</p>
+                        <img src="images/pl4.png" alt="">
+                        <p>
+                            Chuletón de ternera asado a la brasa, con corte grueso y jugoso, acompañado de su propio
+                            jugo natural y un toque de pimienta negra.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <!-- Seccion #3 -->
+
+    <section class="recetas container">
+
+        <div class="recetas-2">
+            <h2>100 <br> tipos <br> de carne </h2>
+        </div>
+
+        <div class="recetas-1" id="r12">
+            <h3>100 modos de pedir tu corte</h3>
+            <hr>
+            <p>kg</p>
+        </div>
+
+    </section>
+
+    <!-- Seccion #4 -->
+
+    <section class="platillos container" id="lista-2">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1">Corte de Lomo Alto</h3>
+                        <p class="precio">$180</p>
+                        <img src="images/c1.png" alt="">
+                        <p class="c2">
+                            Lomo alto de ternera fresca, con vetas de grasa ideales para cocinar a la parrilla o sartén.
+                            Calidad premium del carnicero.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1">Entrecot Crudo</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/c2.png" alt="">
+                        <p class="c2">
+                            Entrecot fresco de vaca, cortado en pieza gruesa, perfecto para preparar en casa al gusto
+                            del comensal.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1">Solomillo de Ternera</h3>
+                        <p class="precio">$220</p>
+                        <img src="images/c3.png" alt="">
+                        <p class="c2">
+                            Solomillo tierno y jugoso, de vaca de primera calidad. Ideal para preparar filetes o
+                            medallones en casa.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1">Chuletón Crudo</h3>
+                        <p class="precio">$240</p>
+                        <img src="images/c1.png" alt="">
+                        <p class="c2">
+                            Chuletón de vaca fresco, con su hueso y grasa natural. Cortado y listo para cocinar según el
+                            gusto del chef.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Seccion #5 -->
+
+    <section class="recetas container">
+
+        <div class="recetas-1">
+            <hr>
+            <p>Contacto</p>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer container">
+
+        <div class="links">
+
+            <div class="link">
+
+                <h1>Redes</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis ratione,
+                    at voluptates necessitatibus delectus, fugit fugiat dolorem itaque tempora dolores,
+                    alias labore provident qui dolore iste. Blanditiis, accusamus et?
+                </p>
+
+                <div class="socials-2">
+                    <a href="https://www.instagram.com/walter__aleee/"><img src="images/s1.svg"
+                            alt="logo instagram"></a>
+                    <a href="#"><img src="images/s2.svg" alt="logo facebook"></a>
+                    <a href="#"><img src="images/s3.svg" alt="logo twitter"></a>
+                </div>
+
+            </div>
+
+            <div class="link">
+
+                <h1>Lorem</h1>
+
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+
+            </div>
+
+            <div class="link">
+
+                <h1>Lorem</h1>
+
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+
+            </div>
+
+            <div class="link">
+
+                <h3>Lorem</h3>
+
+                <form>
+                    <input type="text" placeholder="Nombre" class="inp">
+                    <input type="email" placeholder="Enviar" class="inp">
+                    <textarea class="inp"></textarea>
+                    <input class="btn-5" type="submit" value="Enviar">
+                </form>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
