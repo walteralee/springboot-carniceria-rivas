@@ -36,10 +36,13 @@ persistencia de datos, arquitectura clara y configuración portable.
 
 ```bash
 git clone https://github.com/walteralee/springboot-carniceria-rivas.git
+```
 
 2. Accede al directorio del proyecto:
 
+```bash
 cd springboot-carniceria-rivas
+```
 
 3. Ejecuta la aplicación.
 
