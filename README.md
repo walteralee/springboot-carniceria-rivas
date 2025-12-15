@@ -46,12 +46,18 @@ cd springboot-carniceria-rivas
 
 3. Ejecuta la aplicación.
 
+```bash
 mvn spring-boot:run
+```
 
 Si no tienes Maven instalado (opción recomendada), usa Maven Wrapper:
 
+```bash
 ./mvnw spring-boot:run
+```
 
 Una vez iniciada la aplicación, accede desde el navegador a:
 
+```bash
 http://localhost:8080
+```
