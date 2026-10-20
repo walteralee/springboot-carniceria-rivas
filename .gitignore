@@ -1,36 +1,32 @@
-HELP.md
+# Compilación de Maven
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+!.mvn/wrapper/maven-wrapper.jar
+HELP.md
 
-### STS ###
-.apt_generated
+# Base de datos y archivos que crea la aplicación al arrancar
+datos/
+*.db
+
+# Versión de Windows generada por scripts/publicar-windows.ps1
+dist/
+
+# IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
 .classpath
-.factorypath
 .project
-.settings
+.settings/
+.factorypath
+.apt_generated
 .springBeans
 .sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
 /nbproject/private/
 /nbbuild/
-/dist/
 /nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
-
-### Bases de datos ###
-*.db
+# Sistema operativo
+.DS_Store
+Thumbs.db

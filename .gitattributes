@@ -1,2 +1,10 @@
+# Finales de línea fijos para que los scripts funcionen en cualquier sistema
+* text=auto
 /mvnw text eol=lf
+*.sh text eol=lf
 *.cmd text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.png binary
+*.jpg binary
+*.ico binary
