@@ -54,7 +54,7 @@ echo.
 
 rem La propia aplicacion abre el navegador cuando esta lista
 set "CARNICERIA_ABRIR_NAVEGADOR=true"
-call mvnw.cmd -q spring-boot:run
+call "%~dp0mvnw.cmd" -q spring-boot:run
 if errorlevel 1 (
     set "MENSAJE=La aplicacion se ha detenido con un error. Revisa los mensajes de arriba"
     goto error
