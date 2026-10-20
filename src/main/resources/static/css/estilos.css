@@ -554,5 +554,96 @@ td {
     margin-bottom: 10px; /* espacio con el botón */
 }
 
+/*--------------------------------------------------------------Carrito: contador, botones y aviso--------------------------------------------------------------*/
 
+.oculto{
+    display: none !important;
+}
+
+.contador-carrito{
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    border-radius: 10px;
+    background-color: #E45D34;
+    color: #DFDDE0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+}
+
+.carrito-vacio{
+    color: #DFDDE0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.acciones-carrito{
+    white-space: nowrap;
+}
+
+.acciones-carrito a{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.sumar{
+    background-color: #07901c;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #DFDDE0;
+    font-weight: 800;
+}
+
+.error-carga{
+    color: #E45D34;
+    text-align: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+/*--------------------------------------------------------------Últimos pedidos--------------------------------------------------------------*/
+
+.pedidos{
+    padding: 0 50px 80px;
+}
+
+.tabla-pedidos th,
+.tabla-pedidos td{
+    padding: 12px 15px;
+    height: auto;
+    border-bottom: 1px solid #312f32;
+}
+
+.tabla-pedidos th{
+    color: #E45D34;
+}
+
+.tabla-pedidos .productos-pedido{
+    text-align: left;
+    color: #8B7E7B;
+}
+
+.sin-pedidos{
+    color: #8B7E7B;
+    text-align: center;
+    padding: 30px 0;
+}
+
+@media (max-width: 768px){
+
+    .pedidos{
+        padding: 0 15px 60px;
+        overflow-x: auto;
+    }
+
+    .submenu:hover #carrito{
+        min-width: 0;
+        width: 90vw;
+    }
+}
 
