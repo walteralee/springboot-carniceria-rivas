@@ -3,7 +3,7 @@ package com.carniceriarivas.config;
 import com.carniceriarivas.modelo.Categoria;
 import com.carniceriarivas.modelo.Producto;
 import com.carniceriarivas.repositorio.ProductoRepositorio;
-import org.springframework.boot.CommandLineRunner;
+import org.springframework.beans.factory.SmartInitializingSingleton;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -23,10 +23,12 @@ public class DatosIniciales {
         return Clock.systemDefaultZone();
     }
 
-    // La primera vez que se arranca, con la base de datos vacía, se carga el catálogo de la carnicería
+    // La primera vez que se arranca, con la base de datos vacía, se carga el catálogo de la carnicería.
+    // Se hace al crear los componentes, antes de que el servidor web empiece a atender peticiones,
+    // para que nadie pueda ver la tienda vacía durante el arranque
     @Bean
-    public CommandLineRunner cargarCatalogo(ProductoRepositorio productos) {
-        return args -> {
+    public SmartInitializingSingleton cargarCatalogo(ProductoRepositorio productos) {
+        return () -> {
             if (productos.count() > 0) {
                 return;
             }
