@@ -24,7 +24,7 @@ if (-not (Test-Path $jpackage)) {
     throw "No se encuentra jpackage en $jdk. Instala un JDK 21 o superior y define JAVA_HOME"
 }
 
-foreach ($ruta in $trabajo, $aplicacion, $zip) {
+foreach ($ruta in $trabajo, $aplicacion, $zip, (Join-Path $dist "carniceria-rivas.jar")) {
     if (Test-Path $ruta) { Remove-Item $ruta -Recurse -Force }
 }
 New-Item -ItemType Directory -Force (Join-Path $trabajo "entrada") | Out-Null
@@ -78,4 +78,8 @@ if ($LASTEXITCODE -ne 0) { throw "Error al crear el programa con jpackage" }
 Compress-Archive -Path $aplicacion -DestinationPath $zip
 Remove-Item $trabajo -Recurse -Force
 
+# El .jar también se publica en la Release para quien ya tenga Java 21 (Mac, Linux o Windows)
+Copy-Item (Join-Path $raiz "target\carniceria-rivas.jar") $dist -Force
+
 Write-Host "Listo: $zip"
+Write-Host "       $(Join-Path $dist 'carniceria-rivas.jar')"
