@@ -1,0 +1,13 @@
+services:
+  carniceria:
+    build: .
+    image: carniceria-rivas
+    container_name: carniceria-rivas
+    ports:
+      - "8080:8080"
+    volumes:
+      - carniceria-datos:/app/datos
+    restart: unless-stopped
+
+volumes:
+  carniceria-datos:

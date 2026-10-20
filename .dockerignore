@@ -1,0 +1,11 @@
+target/
+datos/
+dist/
+.idea/
+.git/
+imagenes/
+*.md
+*.txt
+run.bat
+run.sh
+scripts/
