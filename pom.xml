@@ -83,12 +83,13 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
-            <!-- Mockito (incluido en los tests de Spring) carga un agente de Java: así no avisa en cada ejecución -->
+            <!-- Tests: Mockito carga un agente de Java (así no avisa) y la librería de SQLite
+                 se descomprime en target/ en vez de en la carpeta temporal del sistema -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <argLine>-XX:+EnableDynamicAgentLoading -Xshare:off</argLine>
+                    <argLine>-XX:+EnableDynamicAgentLoading -Xshare:off "-Dorg.sqlite.tmpdir=${project.build.directory}"</argLine>
                 </configuration>
             </plugin>
         </plugins>

@@ -576,6 +576,15 @@ td {
     text-align: center;
 }
 
+.submenu:hover #carrito{
+    min-width: 640px;
+}
+
+#lista-carrito th,
+#lista-carrito td{
+    padding-right: 20px;
+}
+
 .carrito-vacio{
     color: #DFDDE0;
     text-align: center;

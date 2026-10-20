@@ -31,11 +31,10 @@ public final class CarpetaDeDatos {
             throw new UncheckedIOException("No se pudo crear la carpeta de datos " + carpeta, e);
         }
 
-        // application.properties usa esta propiedad para la ruta del archivo .db
+        // application.properties usa esta propiedad para la base de datos y la carpeta de trabajo de Tomcat
         System.setProperty(PROPIEDAD, carpeta.toString().replace('\\', '/'));
 
-        // Tomcat y el driver de SQLite dejan sus archivos temporales aquí, no en la carpeta temporal del sistema
-        System.setProperty("java.io.tmpdir", temporal.toString());
+        // El driver de SQLite descomprime aquí su librería nativa en vez de en la carpeta temporal del sistema
         System.setProperty("org.sqlite.tmpdir", temporal.toString());
 
         return carpeta;
